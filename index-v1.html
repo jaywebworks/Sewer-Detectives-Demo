@@ -1,0 +1,1506 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width,initial-scale=1"/>
+<title>Sewer Detectives LLC | Seattle's Premier Sewer & Drain Specialists</title>
+<meta name="description" content="Seattle's trusted sewer inspection, hydro jetting & drain cleaning experts. Licensed, bonded & insured. City of Seattle registered. 24/7 emergency service. Call (425) 923-4958."/>
+<meta name="keywords" content="sewer inspection Seattle, hydro jetting King County, drain cleaning Seattle, sewer line repair, emergency drain service"/>
+<link rel="canonical" href="https://sewerdetectives.com/"/>
+<meta property="og:title" content="Sewer Detectives LLC | Seattle Sewer & Drain Experts"/>
+<meta property="og:description" content="Licensed, bonded & insured sewer specialists serving Seattle. 24/7 emergency service available."/>
+<meta property="og:type" content="website"/>
+
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"LocalBusiness","name":"Sewer Detectives LLC","telephone":"(425) 923-4958","address":{"@type":"PostalAddress","addressLocality":"Seattle","addressRegion":"WA","addressCountry":"US"},"openingHours":"Mo-Su 00:00-23:59","priceRange":"$$","description":"Licensed, bonded and insured sewer inspection, hydro jetting, and drain cleaning specialists serving Seattle and King County."}
+</script>
+
+<link rel="preconnect" href="https://fonts.googleapis.com"/>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+<link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800;900&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet"/>
+
+<style>
+:root {
+  --bg: #050a12;
+  --surface: #0a1220;
+  --card: #0f1929;
+  --card-hover: #141f33;
+  --border: rgba(255,255,255,0.07);
+  --border-light: rgba(255,255,255,0.12);
+  --gold: #f0b429;
+  --gold-dim: rgba(240,180,41,0.15);
+  --gold-glow: rgba(240,180,41,0.3);
+  --water: #00c4d4;
+  --water-dim: rgba(0,196,212,0.12);
+  --red: #ef4444;
+  --text: #eef2f7;
+  --muted: #8896a7;
+  --muted2: #5a6a7a;
+  --radius: 16px;
+  --radius-sm: 10px;
+  --radius-lg: 24px;
+  --shadow: 0 4px 32px rgba(0,0,0,0.5);
+  --shadow-gold: 0 0 40px rgba(240,180,41,0.2);
+  --transition: 0.35s cubic-bezier(0.4,0,0.2,1);
+}
+
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;font-size:16px}
+body{font-family:'Inter',sans-serif;background:var(--bg);color:var(--text);overflow-x:hidden;line-height:1.6}
+h1,h2,h3,h4,h5{font-family:'Outfit',sans-serif;line-height:1.15;font-weight:700}
+a{color:inherit;text-decoration:none}
+img{max-width:100%;height:auto}
+button{cursor:pointer;font-family:'Inter',sans-serif}
+ul{list-style:none}
+
+/* ─── SCROLLBAR ─── */
+::-webkit-scrollbar{width:6px}
+::-webkit-scrollbar-track{background:var(--bg)}
+::-webkit-scrollbar-thumb{background:var(--gold);border-radius:3px}
+
+/* ─── LOADER ─── */
+#loader{position:fixed;inset:0;z-index:9999;background:var(--bg);display:flex;flex-direction:column;align-items:center;justify-content:center;gap:24px;transition:opacity 0.6s ease,visibility 0.6s ease}
+#loader.hidden{opacity:0;visibility:hidden;pointer-events:none}
+.loader-logo{font-family:'Outfit',sans-serif;font-size:clamp(28px,5vw,42px);font-weight:800;letter-spacing:-1px}
+.loader-logo span{color:var(--gold)}
+.loader-bar{width:200px;height:3px;background:rgba(255,255,255,0.1);border-radius:2px;overflow:hidden}
+.loader-fill{height:100%;background:linear-gradient(90deg,var(--water),var(--gold));border-radius:2px;animation:loaderFill 1.6s ease forwards}
+@keyframes loaderFill{from{width:0}to{width:100%}}
+.loader-text{font-size:13px;color:var(--muted);letter-spacing:3px;text-transform:uppercase;animation:pulse 1.2s ease infinite}
+@keyframes pulse{0%,100%{opacity:0.5}50%{opacity:1}}
+
+/* ─── NAV ─── */
+nav{position:fixed;top:0;left:0;right:0;z-index:1000;padding:0 24px;transition:all var(--transition)}
+.nav-inner{max-width:1280px;margin:0 auto;display:flex;align-items:center;justify-content:space-between;height:72px}
+nav.scrolled{background:rgba(5,10,18,0.92);backdrop-filter:blur(20px);-webkit-backdrop-filter:blur(20px);border-bottom:1px solid var(--border);box-shadow:0 4px 24px rgba(0,0,0,0.4)}
+.nav-logo{font-family:'Outfit',sans-serif;font-size:20px;font-weight:800;letter-spacing:-0.5px;display:flex;align-items:center;gap:10px}
+.nav-logo .icon{width:36px;height:36px;background:var(--gold);border-radius:8px;display:flex;align-items:center;justify-content:center;font-size:18px;flex-shrink:0}
+.nav-logo span{color:var(--gold)}
+.nav-links{display:flex;align-items:center;gap:32px}
+.nav-links a{font-size:14px;font-weight:500;color:var(--muted);transition:color var(--transition);letter-spacing:0.3px}
+.nav-links a:hover{color:var(--text)}
+.nav-cta{display:flex;align-items:center;gap:12px}
+.btn-call{display:flex;align-items:center;gap:8px;background:var(--gold);color:#000;font-weight:700;font-size:14px;padding:10px 20px;border-radius:50px;border:none;transition:all var(--transition);letter-spacing:0.3px}
+.btn-call:hover{background:#d49b1f;transform:translateY(-1px);box-shadow:0 6px 24px rgba(240,180,41,0.4)}
+.btn-call svg{width:16px;height:16px}
+.nav-burger{display:none;flex-direction:column;gap:5px;background:none;border:none;padding:8px;cursor:pointer}
+.nav-burger span{display:block;width:24px;height:2px;background:var(--text);border-radius:2px;transition:all var(--transition)}
+.mobile-menu{display:none;position:fixed;inset:0;background:var(--bg);z-index:999;flex-direction:column;align-items:center;justify-content:center;gap:32px;padding:24px}
+.mobile-menu.open{display:flex}
+.mobile-menu a{font-family:'Outfit',sans-serif;font-size:28px;font-weight:700;color:var(--text)}
+.mobile-menu a:hover{color:var(--gold)}
+.mobile-close{position:absolute;top:24px;right:24px;background:none;border:none;color:var(--text);font-size:32px;cursor:pointer}
+
+/* ─── HERO ─── */
+#hero{position:relative;min-height:100vh;display:flex;align-items:center;overflow:hidden;padding-top:72px}
+.hero-bg{position:absolute;inset:0;background:radial-gradient(ellipse 80% 60% at 60% 40%,rgba(0,196,212,0.08) 0%,transparent 60%),radial-gradient(ellipse 60% 80% at 10% 80%,rgba(240,180,41,0.06) 0%,transparent 50%),linear-gradient(135deg,#050a12 0%,#080f1d 50%,#060b18 100%)}
+.hero-grid{position:absolute;inset:0;background-image:linear-gradient(rgba(255,255,255,0.025) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,0.025) 1px,transparent 1px);background-size:60px 60px;mask-image:radial-gradient(ellipse 80% 80% at 50% 50%,black 30%,transparent 80%)}
+.ripple-canvas{position:absolute;inset:0;opacity:0.4}
+.hero-content{position:relative;z-index:2;max-width:1280px;margin:0 auto;padding:80px 24px;display:grid;grid-template-columns:1fr 1fr;gap:64px;align-items:center}
+.hero-badge{display:inline-flex;align-items:center;gap:8px;background:rgba(240,180,41,0.1);border:1px solid rgba(240,180,41,0.3);color:var(--gold);font-size:12px;font-weight:600;letter-spacing:2px;text-transform:uppercase;padding:8px 16px;border-radius:50px;margin-bottom:28px}
+.hero-badge::before{content:'';width:6px;height:6px;background:var(--gold);border-radius:50%;animation:blink 1.5s ease infinite}
+@keyframes blink{0%,100%{opacity:1}50%{opacity:0.2}}
+.hero-title{font-size:clamp(38px,5.5vw,68px);font-weight:900;line-height:1.05;letter-spacing:-2px;margin-bottom:24px}
+.hero-title .line2{color:var(--gold)}
+.hero-title .line3{font-size:0.65em;font-weight:400;color:var(--muted);letter-spacing:-0.5px}
+.hero-sub{font-size:17px;color:var(--muted);max-width:480px;margin-bottom:40px;line-height:1.7}
+.hero-sub strong{color:var(--text)}
+.hero-actions{display:flex;gap:16px;flex-wrap:wrap;margin-bottom:48px}
+.btn-primary{display:inline-flex;align-items:center;gap:10px;background:var(--gold);color:#000;font-weight:700;font-size:15px;padding:16px 32px;border-radius:50px;border:none;transition:all var(--transition);position:relative;overflow:hidden}
+.btn-primary::after{content:'';position:absolute;inset:0;background:linear-gradient(135deg,rgba(255,255,255,0.15),transparent);opacity:0;transition:opacity var(--transition)}
+.btn-primary:hover{transform:translateY(-2px);box-shadow:0 12px 40px rgba(240,180,41,0.45)}
+.btn-primary:hover::after{opacity:1}
+.btn-secondary{display:inline-flex;align-items:center;gap:10px;background:transparent;color:var(--text);font-weight:600;font-size:15px;padding:16px 32px;border-radius:50px;border:1px solid var(--border-light);transition:all var(--transition)}
+.btn-secondary:hover{background:rgba(255,255,255,0.06);border-color:rgba(255,255,255,0.2);transform:translateY(-2px)}
+.hero-trust{display:flex;gap:24px;flex-wrap:wrap}
+.trust-chip{display:flex;align-items:center;gap:8px;font-size:13px;color:var(--muted);font-weight:500}
+.trust-chip svg{color:var(--water);flex-shrink:0}
+.hero-visual{display:flex;flex-direction:column;gap:16px;position:relative}
+.hero-card{background:rgba(15,25,41,0.8);border:1px solid var(--border);border-radius:var(--radius-lg);padding:28px;backdrop-filter:blur(20px);position:relative;overflow:hidden;transition:all var(--transition)}
+.hero-card::before{content:'';position:absolute;top:0;left:0;right:0;height:2px;background:linear-gradient(90deg,var(--water),var(--gold));opacity:0.6}
+.hero-card:hover{border-color:var(--border-light);transform:translateY(-4px);box-shadow:var(--shadow)}
+.hero-card-icon{width:48px;height:48px;border-radius:12px;display:flex;align-items:center;justify-content:center;font-size:22px;margin-bottom:16px}
+.icon-water{background:var(--water-dim);color:var(--water)}
+.icon-gold{background:var(--gold-dim);color:var(--gold)}
+.icon-red{background:rgba(239,68,68,0.15);color:#ef4444}
+.hero-card h4{font-size:17px;font-weight:700;margin-bottom:6px}
+.hero-card p{font-size:13px;color:var(--muted)}
+.hero-card .badge{position:absolute;top:16px;right:16px;background:rgba(0,196,212,0.15);color:var(--water);font-size:11px;font-weight:700;padding:4px 10px;border-radius:50px;letter-spacing:1px}
+.hero-card .badge.red{background:rgba(239,68,68,0.15);color:#ef4444}
+.float-anim{animation:floatCard 4s ease-in-out infinite}
+.float-anim-2{animation:floatCard 4s ease-in-out 1.5s infinite}
+@keyframes floatCard{0%,100%{transform:translateY(0)}50%{transform:translateY(-8px)}}
+
+/* ─── STATS BAR ─── */
+#stats{background:var(--card);border-top:1px solid var(--border);border-bottom:1px solid var(--border);padding:40px 24px}
+.stats-inner{max-width:1280px;margin:0 auto;display:grid;grid-template-columns:repeat(4,1fr);gap:32px}
+.stat-item{text-align:center}
+.stat-number{font-family:'Outfit',sans-serif;font-size:clamp(36px,4vw,52px);font-weight:900;letter-spacing:-2px;background:linear-gradient(135deg,var(--gold),#ffd04d);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;line-height:1}
+.stat-label{font-size:13px;color:var(--muted);margin-top:6px;font-weight:500;letter-spacing:0.5px}
+.stat-divider{width:1px;background:var(--border);align-self:stretch}
+
+/* ─── SECTION HELPERS ─── */
+section{padding:100px 24px}
+.section-inner{max-width:1280px;margin:0 auto}
+.section-tag{display:inline-flex;align-items:center;gap:8px;font-size:12px;font-weight:700;letter-spacing:2.5px;text-transform:uppercase;color:var(--gold);margin-bottom:16px}
+.section-tag::before{content:'';width:20px;height:2px;background:var(--gold);border-radius:1px}
+.section-title{font-size:clamp(30px,4vw,48px);font-weight:900;letter-spacing:-1.5px;line-height:1.1;margin-bottom:16px}
+.section-sub{font-size:17px;color:var(--muted);max-width:560px;line-height:1.7}
+.section-header{margin-bottom:64px}
+.section-header.center{text-align:center}
+.section-header.center .section-tag{justify-content:center}
+.section-header.center .section-sub{margin:0 auto}
+
+/* ─── SERVICES ─── */
+#services{background:var(--surface)}
+.services-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:20px}
+.service-card{background:var(--card);border:1px solid var(--border);border-radius:var(--radius-lg);padding:36px;position:relative;overflow:hidden;transition:all var(--transition);cursor:default}
+.service-card::after{content:'';position:absolute;bottom:0;left:0;right:0;height:3px;background:linear-gradient(90deg,var(--water),var(--gold));transform:scaleX(0);transform-origin:left;transition:transform var(--transition)}
+.service-card:hover{background:var(--card-hover);border-color:rgba(240,180,41,0.2);transform:translateY(-6px);box-shadow:0 20px 60px rgba(0,0,0,0.4)}
+.service-card:hover::after{transform:scaleX(1)}
+.service-icon{width:56px;height:56px;border-radius:14px;display:flex;align-items:center;justify-content:center;font-size:26px;margin-bottom:24px;background:var(--water-dim);transition:all var(--transition)}
+.service-card:hover .service-icon{background:var(--gold-dim);transform:scale(1.1)}
+.service-card h3{font-size:20px;font-weight:700;margin-bottom:10px;letter-spacing:-0.3px}
+.service-card p{font-size:14px;color:var(--muted);line-height:1.7;margin-bottom:20px}
+.service-link{display:inline-flex;align-items:center;gap:6px;font-size:13px;font-weight:600;color:var(--gold);transition:gap var(--transition)}
+.service-link:hover{gap:10px}
+.service-card.featured{background:linear-gradient(135deg,rgba(240,180,41,0.12),rgba(0,196,212,0.06));border-color:rgba(240,180,41,0.25)}
+
+/* ─── WHY US ─── */
+#why{background:var(--bg)}
+.why-grid{display:grid;grid-template-columns:1fr 1fr;gap:80px;align-items:center}
+.why-visual{position:relative}
+.why-card-stack{display:flex;flex-direction:column;gap:16px}
+.why-feat{display:flex;gap:20px;align-items:flex-start;background:var(--card);border:1px solid var(--border);border-radius:var(--radius);padding:24px;transition:all var(--transition)}
+.why-feat:hover{border-color:rgba(240,180,41,0.2);background:var(--card-hover);transform:translateX(8px)}
+.why-feat-icon{width:44px;height:44px;border-radius:10px;background:var(--gold-dim);display:flex;align-items:center;justify-content:center;font-size:20px;flex-shrink:0}
+.why-feat-text h4{font-size:16px;font-weight:700;margin-bottom:4px}
+.why-feat-text p{font-size:13px;color:var(--muted);line-height:1.6}
+.why-cert{margin-top:28px;background:rgba(0,196,212,0.06);border:1px solid rgba(0,196,212,0.2);border-radius:var(--radius);padding:20px 24px;display:flex;align-items:center;gap:16px}
+.why-cert-icon{font-size:28px;flex-shrink:0}
+.why-cert-text{font-size:13px;color:var(--muted);line-height:1.6}
+.why-cert-text strong{color:var(--water);display:block;font-size:14px;margin-bottom:2px}
+
+/* ─── PROCESS ─── */
+#process{background:var(--surface)}
+.process-steps{display:grid;grid-template-columns:repeat(4,1fr);gap:20px;position:relative}
+.process-steps::before{content:'';position:absolute;top:36px;left:10%;right:10%;height:1px;background:linear-gradient(90deg,transparent,var(--border-light),var(--border-light),transparent);z-index:0}
+.process-step{position:relative;z-index:1;text-align:center;padding:32px 20px;background:var(--card);border:1px solid var(--border);border-radius:var(--radius-lg);transition:all var(--transition)}
+.process-step:hover{border-color:rgba(240,180,41,0.25);background:var(--card-hover);transform:translateY(-6px)}
+.step-num{width:64px;height:64px;border-radius:50%;border:2px solid var(--gold);display:flex;align-items:center;justify-content:center;font-family:'Outfit',sans-serif;font-size:22px;font-weight:900;color:var(--gold);margin:0 auto 20px;background:var(--bg);position:relative}
+.step-num::after{content:'';position:absolute;inset:-6px;border-radius:50%;border:1px solid rgba(240,180,41,0.2)}
+.process-step h3{font-size:17px;font-weight:700;margin-bottom:8px}
+.process-step p{font-size:13px;color:var(--muted);line-height:1.6}
+
+/* ─── BEFORE/AFTER ─── */
+#beforeafter{background:var(--bg)}
+.ba-wrap{max-width:900px;margin:0 auto}
+.ba-container{position:relative;border-radius:var(--radius-lg);overflow:hidden;cursor:ew-resize;user-select:none;box-shadow:0 32px 80px rgba(0,0,0,0.6);border:1px solid var(--border)}
+.ba-before,.ba-after{position:absolute;inset:0}
+.ba-before{background:linear-gradient(135deg,#1a1a2e,#16213e);display:flex;align-items:center;justify-content:center;font-family:'Outfit',sans-serif;font-size:22px;font-weight:700;flex-direction:column;gap:12px}
+.ba-before .ba-desc{font-size:14px;color:var(--muted);font-weight:400}
+.ba-after{background:linear-gradient(135deg,#0f2027,#203a43,#2c5364);display:flex;align-items:center;justify-content:center;font-family:'Outfit',sans-serif;font-size:22px;font-weight:700;flex-direction:column;gap:12px;clip-path:inset(0 50% 0 0)}
+.ba-emoji{font-size:48px}
+.ba-divider{position:absolute;top:0;bottom:0;width:3px;background:white;left:50%;transform:translateX(-50%);z-index:10;cursor:ew-resize}
+.ba-handle{position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);width:44px;height:44px;background:white;border-radius:50%;display:flex;align-items:center;justify-content:center;box-shadow:0 4px 20px rgba(0,0,0,0.4);z-index:11;font-size:18px}
+.ba-labels{display:flex;justify-content:space-between;margin-top:16px}
+.ba-label{font-size:12px;font-weight:600;color:var(--muted);letter-spacing:1.5px;text-transform:uppercase;display:flex;align-items:center;gap:6px}
+.ba-label span{width:8px;height:8px;border-radius:50%;display:inline-block}
+.ba-label.before span{background:var(--red)}
+.ba-label.after span{background:var(--water)}
+.ba-img-container{width:100%;aspect-ratio:16/9;position:relative}
+
+/* ─── TESTIMONIALS ─── */
+#testimonials{background:var(--surface)}
+.testi-slider{position:relative;overflow:hidden}
+.testi-track{display:flex;transition:transform 0.5s cubic-bezier(0.4,0,0.2,1)}
+.testi-card{flex:0 0 100%;padding:0 8px}
+@media(min-width:768px){.testi-card{flex:0 0 50%}}
+@media(min-width:1024px){.testi-card{flex:0 0 33.333%}}
+.testi-inner{background:var(--card);border:1px solid var(--border);border-radius:var(--radius-lg);padding:32px;height:100%;display:flex;flex-direction:column;gap:16px;transition:all var(--transition)}
+.testi-inner:hover{border-color:rgba(240,180,41,0.2);transform:translateY(-4px)}
+.testi-stars{display:flex;gap:4px;color:var(--gold);font-size:16px}
+.testi-text{font-size:15px;color:var(--text);line-height:1.75;flex:1;font-style:italic}
+.testi-text::before{content:'\201C';font-size:32px;color:var(--gold);font-style:normal;line-height:0;vertical-align:-14px;margin-right:4px}
+.testi-author{display:flex;align-items:center;gap:14px;padding-top:16px;border-top:1px solid var(--border)}
+.testi-avatar{width:44px;height:44px;border-radius:50%;background:linear-gradient(135deg,var(--water),var(--gold));display:flex;align-items:center;justify-content:center;font-family:'Outfit',sans-serif;font-weight:800;font-size:16px;color:#000;flex-shrink:0}
+.testi-name{font-weight:700;font-size:14px}
+.testi-loc{font-size:12px;color:var(--muted)}
+.testi-controls{display:flex;justify-content:center;align-items:center;gap:16px;margin-top:40px}
+.testi-btn{width:44px;height:44px;border-radius:50%;background:var(--card);border:1px solid var(--border);color:var(--text);display:flex;align-items:center;justify-content:center;cursor:pointer;transition:all var(--transition);font-size:18px}
+.testi-btn:hover{background:var(--gold);color:#000;border-color:var(--gold)}
+.testi-dots{display:flex;gap:8px}
+.testi-dot{width:8px;height:8px;border-radius:50%;background:var(--border-light);cursor:pointer;transition:all var(--transition)}
+.testi-dot.active{width:24px;border-radius:4px;background:var(--gold)}
+
+/* ─── EMERGENCY ─── */
+#emergency{background:linear-gradient(135deg,#1a0505,#2d0a0a);border-top:1px solid rgba(239,68,68,0.2);border-bottom:1px solid rgba(239,68,68,0.2);position:relative;overflow:hidden;padding:80px 24px}
+#emergency::before{content:'';position:absolute;inset:0;background:radial-gradient(ellipse 60% 80% at 50% 50%,rgba(239,68,68,0.08) 0%,transparent 60%)}
+.emg-inner{max-width:900px;margin:0 auto;text-align:center;position:relative;z-index:1}
+.emg-badge{display:inline-flex;align-items:center;gap:8px;background:rgba(239,68,68,0.15);border:1px solid rgba(239,68,68,0.4);color:#ef4444;font-size:12px;font-weight:700;letter-spacing:2px;text-transform:uppercase;padding:8px 16px;border-radius:50px;margin-bottom:24px}
+.emg-badge::before{content:'';width:8px;height:8px;background:#ef4444;border-radius:50%;animation:blink 0.8s ease infinite}
+.emg-title{font-size:clamp(32px,5vw,52px);font-weight:900;letter-spacing:-1.5px;margin-bottom:16px}
+.emg-sub{font-size:17px;color:var(--muted);margin-bottom:40px}
+.emg-actions{display:flex;justify-content:center;gap:16px;flex-wrap:wrap}
+.btn-red{display:inline-flex;align-items:center;gap:10px;background:#ef4444;color:#fff;font-weight:700;font-size:16px;padding:18px 36px;border-radius:50px;border:none;transition:all var(--transition)}
+.btn-red:hover{background:#dc2626;transform:translateY(-2px);box-shadow:0 12px 40px rgba(239,68,68,0.4)}
+
+/* ─── SERVICE AREA ─── */
+#area{background:var(--bg)}
+.area-grid{display:grid;grid-template-columns:1fr 1fr;gap:64px;align-items:center}
+.area-cities{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-top:32px}
+.city-chip{display:flex;align-items:center;gap:8px;padding:12px 16px;background:var(--card);border:1px solid var(--border);border-radius:var(--radius-sm);font-size:13px;font-weight:500;color:var(--muted);transition:all var(--transition)}
+.city-chip:hover{border-color:rgba(240,180,41,0.3);color:var(--text);background:var(--card-hover)}
+.city-chip::before{content:'📍';font-size:12px}
+.area-visual{position:relative}
+.map-placeholder{background:var(--card);border:1px solid var(--border);border-radius:var(--radius-lg);aspect-ratio:1;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:16px;position:relative;overflow:hidden}
+.map-rings{position:relative;width:160px;height:160px}
+.map-ring{position:absolute;inset:0;border-radius:50%;border:1px solid rgba(0,196,212,0.2);animation:ringPulse 3s ease-out infinite}
+.map-ring:nth-child(2){animation-delay:1s;border-color:rgba(240,180,41,0.15)}
+.map-ring:nth-child(3){animation-delay:2s;border-color:rgba(0,196,212,0.1)}
+.map-center{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;font-size:48px}
+@keyframes ringPulse{0%{transform:scale(0.5);opacity:1}100%{transform:scale(2);opacity:0}}
+.map-label{font-family:'Outfit',sans-serif;font-size:20px;font-weight:700}
+.map-sublabel{font-size:13px;color:var(--muted)}
+
+/* ─── FAQ ─── */
+#faq{background:var(--surface)}
+.faq-list{max-width:800px;margin:0 auto;display:flex;flex-direction:column;gap:12px}
+.faq-item{background:var(--card);border:1px solid var(--border);border-radius:var(--radius);overflow:hidden;transition:border-color var(--transition)}
+.faq-item.open{border-color:rgba(240,180,41,0.25)}
+.faq-q{width:100%;display:flex;justify-content:space-between;align-items:center;padding:22px 28px;background:none;border:none;color:var(--text);text-align:left;cursor:pointer;font-family:'Outfit',sans-serif;font-size:17px;font-weight:600;gap:16px;transition:color var(--transition)}
+.faq-q:hover{color:var(--gold)}
+.faq-item.open .faq-q{color:var(--gold)}
+.faq-icon{width:28px;height:28px;border-radius:50%;border:1px solid var(--border);display:flex;align-items:center;justify-content:center;flex-shrink:0;transition:all var(--transition);font-size:14px}
+.faq-item.open .faq-icon{background:var(--gold);border-color:var(--gold);color:#000;transform:rotate(45deg)}
+.faq-a{max-height:0;overflow:hidden;transition:max-height 0.4s cubic-bezier(0.4,0,0.2,1)}
+.faq-a-inner{padding:0 28px 22px;font-size:15px;color:var(--muted);line-height:1.75}
+.faq-item.open .faq-a{max-height:300px}
+
+/* ─── CONTACT ─── */
+#contact{background:linear-gradient(135deg,var(--bg),var(--surface))}
+.contact-grid{display:grid;grid-template-columns:1fr 1fr;gap:64px;align-items:start}
+.contact-info h3{font-size:28px;font-weight:800;margin-bottom:12px;letter-spacing:-0.5px}
+.contact-info p{color:var(--muted);line-height:1.7;margin-bottom:32px}
+.contact-detail{display:flex;align-items:flex-start;gap:16px;margin-bottom:20px}
+.contact-icon{width:44px;height:44px;border-radius:10px;background:var(--gold-dim);display:flex;align-items:center;justify-content:center;font-size:18px;flex-shrink:0}
+.contact-detail-text strong{display:block;font-size:14px;font-weight:700;margin-bottom:2px}
+.contact-detail-text span{font-size:14px;color:var(--muted)}
+.form-card{background:var(--card);border:1px solid var(--border);border-radius:var(--radius-lg);padding:40px}
+.form-row{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-bottom:16px}
+.form-group{margin-bottom:16px}
+.form-group label{display:block;font-size:13px;font-weight:600;color:var(--muted);margin-bottom:8px;letter-spacing:0.3px}
+.form-group input,.form-group select,.form-group textarea{width:100%;background:var(--surface);border:1px solid var(--border);border-radius:var(--radius-sm);padding:14px 16px;color:var(--text);font-size:14px;font-family:'Inter',sans-serif;transition:border-color var(--transition);outline:none}
+.form-group input:focus,.form-group select:focus,.form-group textarea:focus{border-color:rgba(240,180,41,0.5);box-shadow:0 0 0 3px rgba(240,180,41,0.08)}
+.form-group textarea{resize:vertical;min-height:100px}
+.form-group select option{background:var(--card)}
+.form-submit{width:100%;padding:16px;background:var(--gold);color:#000;font-weight:700;font-size:15px;border:none;border-radius:50px;cursor:pointer;transition:all var(--transition);font-family:'Outfit',sans-serif;margin-top:8px}
+.form-submit:hover{background:#d49b1f;transform:translateY(-2px);box-shadow:0 12px 36px rgba(240,180,41,0.4)}
+.form-note{text-align:center;font-size:12px;color:var(--muted2);margin-top:12px}
+
+/* ─── FOOTER ─── */
+footer{background:#030710;border-top:1px solid var(--border);padding:64px 24px 32px}
+.footer-inner{max-width:1280px;margin:0 auto}
+.footer-top{display:grid;grid-template-columns:2fr 1fr 1fr 1fr;gap:48px;margin-bottom:48px}
+.footer-brand .logo{font-family:'Outfit',sans-serif;font-size:22px;font-weight:800;letter-spacing:-0.5px;margin-bottom:16px}
+.footer-brand .logo span{color:var(--gold)}
+.footer-brand p{font-size:14px;color:var(--muted2);line-height:1.7;margin-bottom:20px;max-width:280px}
+.footer-badges{display:flex;flex-direction:column;gap:8px}
+.footer-badge{display:flex;align-items:center;gap:8px;font-size:12px;color:var(--muted);font-weight:500}
+.footer-badge::before{content:'✓';color:var(--water);font-weight:700;font-size:13px}
+.footer-col h5{font-family:'Outfit',sans-serif;font-size:14px;font-weight:700;color:var(--text);margin-bottom:20px;letter-spacing:0.5px;text-transform:uppercase}
+.footer-col ul{display:flex;flex-direction:column;gap:10px}
+.footer-col ul li a{font-size:13px;color:var(--muted2);transition:color var(--transition)}
+.footer-col ul li a:hover{color:var(--gold)}
+.footer-bottom{border-top:1px solid var(--border);padding-top:28px;display:flex;justify-content:space-between;align-items:center;gap:16px;flex-wrap:wrap}
+.footer-bottom p{font-size:12px;color:var(--muted2)}
+.footer-phone{display:flex;align-items:center;gap:8px;font-size:14px;font-weight:700;color:var(--gold)}
+
+/* ─── CHATBOT ─── */
+.chat-fab{position:fixed;bottom:28px;right:28px;z-index:900;width:60px;height:60px;border-radius:50%;background:var(--gold);border:none;cursor:pointer;box-shadow:0 8px 32px rgba(240,180,41,0.5);display:flex;align-items:center;justify-content:center;transition:all var(--transition);font-size:24px}
+.chat-fab:hover{transform:scale(1.1) translateY(-2px);box-shadow:0 12px 40px rgba(240,180,41,0.6)}
+.chat-fab-pulse{position:absolute;inset:-4px;border-radius:50%;border:2px solid rgba(240,180,41,0.4);animation:fabPulse 2s ease infinite}
+@keyframes fabPulse{0%{transform:scale(1);opacity:0.8}100%{transform:scale(1.4);opacity:0}}
+.chat-unread{position:absolute;top:-4px;right:-4px;width:18px;height:18px;background:#ef4444;border-radius:50%;font-size:10px;font-weight:700;color:#fff;display:flex;align-items:center;justify-content:center;border:2px solid var(--bg)}
+.chat-window{position:fixed;bottom:104px;right:28px;z-index:900;width:380px;max-height:580px;background:var(--card);border:1px solid var(--border-light);border-radius:var(--radius-lg);box-shadow:0 32px 80px rgba(0,0,0,0.7);display:flex;flex-direction:column;overflow:hidden;transform:scale(0.9) translateY(20px);opacity:0;pointer-events:none;transition:all 0.3s cubic-bezier(0.4,0,0.2,1);transform-origin:bottom right}
+.chat-window.open{transform:scale(1) translateY(0);opacity:1;pointer-events:all}
+.chat-header{background:linear-gradient(135deg,#0a1220,#0f1929);border-bottom:1px solid var(--border);padding:16px 20px;display:flex;align-items:center;justify-content:space-between}
+.chat-agent{display:flex;align-items:center;gap:12px}
+.chat-avatar{width:40px;height:40px;border-radius:50%;background:linear-gradient(135deg,var(--water),var(--gold));display:flex;align-items:center;justify-content:center;font-family:'Outfit',sans-serif;font-weight:800;font-size:14px;color:#000;position:relative;flex-shrink:0}
+.chat-online{position:absolute;bottom:0;right:0;width:11px;height:11px;background:#22c55e;border-radius:50%;border:2px solid var(--card)}
+.chat-agent-info .name{font-weight:700;font-size:14px}
+.chat-agent-info .role{font-size:11px;color:var(--water);font-weight:500}
+.chat-close{background:none;border:none;color:var(--muted);cursor:pointer;font-size:20px;padding:4px;transition:color var(--transition)}
+.chat-close:hover{color:var(--text)}
+.chat-messages{flex:1;overflow-y:auto;padding:16px;display:flex;flex-direction:column;gap:12px;scroll-behavior:smooth}
+.chat-messages::-webkit-scrollbar{width:4px}
+.chat-messages::-webkit-scrollbar-thumb{background:var(--border-light);border-radius:2px}
+.msg{max-width:85%;display:flex;flex-direction:column;gap:4px;animation:msgIn 0.3s cubic-bezier(0.4,0,0.2,1)}
+@keyframes msgIn{from{opacity:0;transform:translateY(8px)}to{opacity:1;transform:translateY(0)}}
+.msg.bot{align-self:flex-start}
+.msg.user{align-self:flex-end}
+.msg-bubble{padding:12px 16px;border-radius:var(--radius);font-size:14px;line-height:1.6}
+.msg.bot .msg-bubble{background:var(--surface);border:1px solid var(--border);border-radius:4px var(--radius) var(--radius) var(--radius);color:var(--text)}
+.msg.user .msg-bubble{background:var(--gold);color:#000;font-weight:500;border-radius:var(--radius) 4px var(--radius) var(--radius)}
+.msg-time{font-size:10px;color:var(--muted2)}
+.msg.user .msg-time{text-align:right}
+.typing-bubble{display:flex;gap:4px;align-items:center;padding:12px 16px;background:var(--surface);border:1px solid var(--border);border-radius:4px var(--radius) var(--radius) var(--radius);width:fit-content}
+.typing-dot{width:6px;height:6px;background:var(--muted);border-radius:50%;animation:typingDot 1.2s ease infinite}
+.typing-dot:nth-child(2){animation-delay:0.2s}
+.typing-dot:nth-child(3){animation-delay:0.4s}
+@keyframes typingDot{0%,60%,100%{transform:translateY(0)}30%{transform:translateY(-6px)}}
+.quick-replies{display:flex;flex-wrap:wrap;gap:8px;padding:0 16px 12px}
+.qr-btn{background:rgba(240,180,41,0.1);border:1px solid rgba(240,180,41,0.3);color:var(--gold);font-size:12px;font-weight:600;padding:7px 14px;border-radius:50px;cursor:pointer;transition:all var(--transition);white-space:nowrap}
+.qr-btn:hover{background:var(--gold);color:#000}
+.chat-input-row{border-top:1px solid var(--border);padding:12px 16px;display:flex;gap:10px;align-items:flex-end}
+.chat-input{flex:1;background:var(--surface);border:1px solid var(--border);border-radius:var(--radius-sm);padding:10px 14px;color:var(--text);font-size:14px;font-family:'Inter',sans-serif;resize:none;min-height:40px;max-height:100px;outline:none;transition:border-color var(--transition);line-height:1.5}
+.chat-input:focus{border-color:rgba(240,180,41,0.4)}
+.chat-send{width:38px;height:38px;border-radius:50%;background:var(--gold);border:none;color:#000;display:flex;align-items:center;justify-content:center;cursor:pointer;transition:all var(--transition);flex-shrink:0;font-size:16px}
+.chat-send:hover{background:#d49b1f;transform:scale(1.1)}
+
+/* ─── ANIMATIONS ─── */
+.reveal{opacity:0;transform:translateY(32px);transition:opacity 0.7s cubic-bezier(0.4,0,0.2,1),transform 0.7s cubic-bezier(0.4,0,0.2,1)}
+.reveal.revealed{opacity:1;transform:translateY(0)}
+.reveal-delay-1{transition-delay:0.1s}
+.reveal-delay-2{transition-delay:0.2s}
+.reveal-delay-3{transition-delay:0.3s}
+.reveal-delay-4{transition-delay:0.4s}
+.reveal-left{opacity:0;transform:translateX(-40px);transition:opacity 0.7s cubic-bezier(0.4,0,0.2,1),transform 0.7s cubic-bezier(0.4,0,0.2,1)}
+.reveal-left.revealed{opacity:1;transform:translateX(0)}
+.reveal-right{opacity:0;transform:translateX(40px);transition:opacity 0.7s cubic-bezier(0.4,0,0.2,1),transform 0.7s cubic-bezier(0.4,0,0.2,1)}
+.reveal-right.revealed{opacity:1;transform:translateX(0)}
+
+/* ─── RESPONSIVE ─── */
+@media(max-width:1024px){
+  .hero-content{grid-template-columns:1fr;gap:48px}
+  .hero-visual{display:none}
+  .why-grid{grid-template-columns:1fr}
+  .process-steps{grid-template-columns:1fr 1fr}
+  .area-grid{grid-template-columns:1fr}
+  .area-visual{display:none}
+  .contact-grid{grid-template-columns:1fr}
+  .footer-top{grid-template-columns:1fr 1fr}
+  .stats-inner{grid-template-columns:1fr 1fr}
+}
+@media(max-width:768px){
+  .nav-links{display:none}
+  .nav-burger{display:flex}
+  section{padding:70px 20px}
+  .process-steps{grid-template-columns:1fr}
+  .process-steps::before{display:none}
+  .form-row{grid-template-columns:1fr}
+  .footer-top{grid-template-columns:1fr}
+  .chat-window{width:calc(100vw - 32px);right:16px;bottom:88px}
+  .stats-inner{grid-template-columns:1fr 1fr}
+  .emg-actions{flex-direction:column;align-items:center}
+}
+@media(max-width:480px){
+  .stats-inner{grid-template-columns:1fr 1fr}
+  .area-cities{grid-template-columns:1fr}
+}
+</style>
+</head>
+<body>
+
+<!-- LOADER -->
+<div id="loader">
+  <div class="loader-logo">Sewer <span>Detectives</span> LLC</div>
+  <div class="loader-bar"><div class="loader-fill"></div></div>
+  <div class="loader-text">Diagnosing. Solving. Done.</div>
+</div>
+
+<!-- MOBILE MENU -->
+<div class="mobile-menu" id="mobileMenu">
+  <button class="mobile-close" onclick="closeMobileMenu()">✕</button>
+  <a href="#services" onclick="closeMobileMenu()">Services</a>
+  <a href="#why" onclick="closeMobileMenu()">Why Us</a>
+  <a href="#process" onclick="closeMobileMenu()">Process</a>
+  <a href="#testimonials" onclick="closeMobileMenu()">Reviews</a>
+  <a href="#faq" onclick="closeMobileMenu()">FAQ</a>
+  <a href="#contact" onclick="closeMobileMenu()">Contact</a>
+  <a href="tel:4259234958" class="btn-primary" style="font-size:18px;padding:16px 40px">📞 (425) 923-4958</a>
+</div>
+
+<!-- NAV -->
+<nav id="navbar">
+  <div class="nav-inner">
+    <a href="#" class="nav-logo">
+      <div class="icon">🔍</div>
+      <div>Sewer <span>Detectives</span></div>
+    </a>
+    <div class="nav-links">
+      <a href="#services">Services</a>
+      <a href="#why">Why Us</a>
+      <a href="#process">Process</a>
+      <a href="#testimonials">Reviews</a>
+      <a href="#faq">FAQ</a>
+      <a href="#contact">Contact</a>
+    </div>
+    <div class="nav-cta">
+      <a href="tel:4259234958" class="btn-call">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 9.82 19.79 19.79 0 01.01 1.18 2 2 0 012 0h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.09 7.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 14.92z"/></svg>
+        (425) 923-4958
+      </a>
+      <button class="nav-burger" onclick="openMobileMenu()" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+</nav>
+
+<!-- HERO -->
+<section id="hero">
+  <div class="hero-bg"></div>
+  <div class="hero-grid"></div>
+  <canvas class="ripple-canvas" id="rippleCanvas"></canvas>
+  <div class="hero-content">
+    <div class="hero-text">
+      <div class="hero-badge">🔍 Seattle's Sewer Specialists</div>
+      <h1 class="hero-title">
+        We Find What<br/>
+        <span class="line2">Others Miss.</span><br/>
+        <span class="line3">Precision sewer diagnostics for Greater Seattle</span>
+      </h1>
+      <p class="hero-sub">
+        <strong>Licensed, bonded & insured</strong> — Sewer Detectives LLC delivers expert sewer inspection, hydro jetting, and drain cleaning backed by decades of local knowledge. <strong>When you've got a problem underground, we solve it fast.</strong>
+      </p>
+      <div class="hero-actions">
+        <a href="tel:4259234958" class="btn-primary">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 9.82 19.79 19.79 0 01.01 1.18 2 2 0 012 0h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.09 7.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 14.92z"/></svg>
+          Call Now — Free Quote
+        </a>
+        <a href="#services" class="btn-secondary">
+          Explore Services →
+        </a>
+      </div>
+      <div class="hero-trust">
+        <div class="trust-chip">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+          City of Seattle Registered
+        </div>
+        <div class="trust-chip">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+          WOSSA Member
+        </div>
+        <div class="trust-chip">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+          24/7 Emergency
+        </div>
+      </div>
+    </div>
+    <div class="hero-visual">
+      <div class="hero-card float-anim">
+        <div class="hero-card-icon icon-water">🔬</div>
+        <div class="badge">Live</div>
+        <h4>HD Camera Inspection</h4>
+        <p>We pipe cameras deep into your line and stream real-time footage — no guessing, just facts.</p>
+      </div>
+      <div class="hero-card float-anim-2">
+        <div class="hero-card-icon icon-gold">💨</div>
+        <h4>High-Pressure Hydro Jetting</h4>
+        <p>Our industrial-grade jets blast through grease, roots, and debris — restoring full flow.</p>
+      </div>
+      <div class="hero-card">
+        <div class="hero-card-icon icon-red">🚨</div>
+        <div class="badge red">24/7</div>
+        <h4>Emergency Response</h4>
+        <p>Sewer emergencies don't wait for business hours. Neither do we.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- STATS -->
+<div id="stats">
+  <div class="stats-inner">
+    <div class="stat-item reveal">
+      <div class="stat-number" data-target="15" data-suffix="+">0</div>
+      <div class="stat-label">Years Serving Seattle</div>
+    </div>
+    <div class="stat-item reveal reveal-delay-1">
+      <div class="stat-number" data-target="2400" data-suffix="+">0</div>
+      <div class="stat-label">Jobs Completed</div>
+    </div>
+    <div class="stat-item reveal reveal-delay-2">
+      <div class="stat-number" data-target="100" data-suffix="%" data-prefix="">0</div>
+      <div class="stat-label">Licensed, Bonded & Insured</div>
+    </div>
+    <div class="stat-item reveal reveal-delay-3">
+      <div class="stat-number" data-target="24" data-suffix="/7">0</div>
+      <div class="stat-label">Emergency Available</div>
+    </div>
+  </div>
+</div>
+
+<!-- SERVICES -->
+<section id="services">
+  <div class="section-inner">
+    <div class="section-header center">
+      <div class="section-tag reveal">What We Do</div>
+      <h2 class="section-title reveal reveal-delay-1">Every Sewer Problem Has a Solution.<br/>We Know All of Them.</h2>
+      <p class="section-sub reveal reveal-delay-2">From routine drain maintenance to complex sewer line diagnostics, we bring the right tools and the right expertise every single time.</p>
+    </div>
+    <div class="services-grid">
+      <div class="service-card featured reveal">
+        <div class="service-icon">📹</div>
+        <h3>Sewer Line Inspection</h3>
+        <p>High-definition camera inspection gives you a crystal-clear view of what's happening inside your lines — blockages, cracks, root intrusions, or corrosion identified on the spot.</p>
+        <span class="service-link">Get an inspection →</span>
+      </div>
+      <div class="service-card reveal reveal-delay-1">
+        <div class="service-icon">💧</div>
+        <h3>Hydro Jetting</h3>
+        <p>Our high-pressure water jetting system obliterates stubborn blockages, grease buildup, mineral scale, and tree roots — restoring your lines to like-new condition.</p>
+        <span class="service-link">Learn about hydro jetting →</span>
+      </div>
+      <div class="service-card reveal reveal-delay-2">
+        <div class="service-icon">🏠</div>
+        <h3>Residential Drain Cleaning</h3>
+        <p>Slow drains, recurring clogs, gurgling sounds? We diagnose and clear your home's drain system quickly and cleanly — minimal disruption, maximum results.</p>
+        <span class="service-link">Residential services →</span>
+      </div>
+      <div class="service-card reveal reveal-delay-3">
+        <div class="service-icon">🏢</div>
+        <h3>Commercial Drain Cleaning</h3>
+        <p>High-volume commercial drainage demands industrial-grade solutions. We keep restaurants, apartment complexes, and commercial properties running without interruption.</p>
+        <span class="service-link">Commercial services →</span>
+      </div>
+      <div class="service-card reveal">
+        <div class="service-icon">🔧</div>
+        <h3>Equipment Rental for Plumbers</h3>
+        <p>Fellow plumbing professionals — we rent our specialized sewer equipment to licensed contractors. Access professional-grade tools without the capital expense.</p>
+        <span class="service-link">Rental details →</span>
+      </div>
+      <div class="service-card reveal reveal-delay-1">
+        <div class="service-icon">🚨</div>
+        <h3>24/7 Emergency Service</h3>
+        <p>Sewer backups and drain emergencies don't follow business hours. Our team is available around the clock to respond fast and minimize damage to your property.</p>
+        <span class="service-link">Call now →</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- WHY US -->
+<section id="why">
+  <div class="section-inner">
+    <div class="why-grid">
+      <div class="reveal-left">
+        <div class="section-tag">Why Choose Us</div>
+        <h2 class="section-title">Seattle Trusts the Detectives. Here's Why.</h2>
+        <p class="section-sub" style="margin-bottom:40px">We're not just a drain company. We're diagnosticians — methodical, experienced, and laser-focused on getting it right the first time.</p>
+        <div class="why-cert">
+          <div class="why-cert-icon">🏅</div>
+          <div class="why-cert-text">
+            <strong>Washington On Site Sewage Association (WOSSA) Member</strong>
+            Held to the highest professional standards in the Washington State sewer industry. City of Seattle registered contractor. Senior & veteran discounts available.
+          </div>
+        </div>
+      </div>
+      <div class="why-card-stack reveal-right">
+        <div class="why-feat">
+          <div class="why-feat-icon">🔍</div>
+          <div class="why-feat-text">
+            <h4>Diagnostic-First Approach</h4>
+            <p>We inspect before we act. Camera technology means we know exactly what's wrong before a single dollar is spent on repairs.</p>
+          </div>
+        </div>
+        <div class="why-feat">
+          <div class="why-feat-icon">⚡</div>
+          <div class="why-feat-text">
+            <h4>Fast Response Times</h4>
+            <p>Seattle and surrounding King County areas — we're in your neighborhood. Emergencies get priority dispatch, period.</p>
+          </div>
+        </div>
+        <div class="why-feat">
+          <div class="why-feat-icon">🛡️</div>
+          <div class="why-feat-text">
+            <h4>Licensed, Bonded & Insured</h4>
+            <p>Full coverage on every job. You're protected. We work to professional standards that give you complete peace of mind.</p>
+          </div>
+        </div>
+        <div class="why-feat">
+          <div class="why-feat-icon">💬</div>
+          <div class="why-feat-text">
+            <h4>Transparent Communication</h4>
+            <p>No mystery charges, no upsell pressure. We explain the problem clearly and give you honest options — then let you decide.</p>
+          </div>
+        </div>
+        <div class="why-feat">
+          <div class="why-feat-icon">🏘️</div>
+          <div class="why-feat-text">
+            <h4>Locally Owned & Operated</h4>
+            <p>We live and work in the communities we serve. Your business matters to us personally — not just professionally.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PROCESS -->
+<section id="process">
+  <div class="section-inner">
+    <div class="section-header center">
+      <div class="section-tag reveal">How It Works</div>
+      <h2 class="section-title reveal reveal-delay-1">Simple Process.<br/>No Surprises.</h2>
+      <p class="section-sub reveal reveal-delay-2">We've streamlined our process so you know exactly what to expect — from your first call to the final flush.</p>
+    </div>
+    <div class="process-steps">
+      <div class="process-step reveal">
+        <div class="step-num">1</div>
+        <h3>Call or Request Online</h3>
+        <p>Reach us by phone or submit the form below. We'll confirm your appointment quickly — often same-day.</p>
+      </div>
+      <div class="process-step reveal reveal-delay-1">
+        <div class="step-num">2</div>
+        <h3>Diagnosis & Inspection</h3>
+        <p>Our tech arrives on time, scopes your lines with HD camera, and gives you a clear picture of the issue.</p>
+      </div>
+      <div class="process-step reveal reveal-delay-2">
+        <div class="step-num">3</div>
+        <h3>Honest Quote — No Pressure</h3>
+        <p>We present your options with upfront pricing. You approve before we do anything. Zero surprises.</p>
+      </div>
+      <div class="process-step reveal reveal-delay-3">
+        <div class="step-num">4</div>
+        <h3>Problem Solved. Done.</h3>
+        <p>We complete the work cleanly and efficiently, confirm everything's flowing right, and leave your property as we found it.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- BEFORE / AFTER -->
+<section id="beforeafter">
+  <div class="section-inner">
+    <div class="section-header center">
+      <div class="section-tag reveal">Real Results</div>
+      <h2 class="section-title reveal reveal-delay-1">See the Difference.<br/>Before & After Hydro Jetting.</h2>
+      <p class="section-sub reveal reveal-delay-2">Drag the slider to see what professional hydro jetting does to a grease-clogged commercial drain line.</p>
+    </div>
+    <div class="ba-wrap reveal">
+      <div class="ba-container" id="baContainer">
+        <div class="ba-img-container">
+          <div class="ba-before">
+            <div class="ba-emoji">🤢</div>
+            <div>Blocked Drain Line</div>
+            <div class="ba-desc">Heavy grease & debris buildup — 90% blocked</div>
+          </div>
+          <div class="ba-after" id="baAfter">
+            <div class="ba-emoji">✨</div>
+            <div>After Hydro Jetting</div>
+            <div class="ba-desc">100% restored — like-new flow capacity</div>
+          </div>
+          <div class="ba-divider" id="baDivider">
+            <div class="ba-handle">↔</div>
+          </div>
+        </div>
+      </div>
+      <div class="ba-labels">
+        <div class="ba-label before"><span></span> Before Treatment</div>
+        <div class="ba-label after"><span></span> After Hydro Jetting</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- TESTIMONIALS -->
+<section id="testimonials">
+  <div class="section-inner">
+    <div class="section-header center">
+      <div class="section-tag reveal">Customer Reviews</div>
+      <h2 class="section-title reveal reveal-delay-1">Seattle Homeowners Trust Us.<br/>Here's What They Say.</h2>
+    </div>
+    <div class="testi-slider reveal">
+      <div class="testi-track" id="testiTrack">
+        <div class="testi-card">
+          <div class="testi-inner">
+            <div class="testi-stars">★★★★★</div>
+            <div class="testi-text">Discovered a collapsed section of sewer line I had no idea about. Saved me from a catastrophic backup. Incredibly professional, explained everything on the camera screen — I actually saw the problem myself.</div>
+            <div class="testi-author">
+              <div class="testi-avatar">MR</div>
+              <div><div class="testi-name">Michael R.</div><div class="testi-loc">📍 Bellevue, WA</div></div>
+            </div>
+          </div>
+        </div>
+        <div class="testi-card">
+          <div class="testi-inner">
+            <div class="testi-stars">★★★★★</div>
+            <div class="testi-text">Called at 10pm on a Sunday for a backed-up floor drain in my restaurant. They were there in under 2 hours, hydro jetted the main line, and had us ready to open Monday morning. Absolute lifesavers.</div>
+            <div class="testi-author">
+              <div class="testi-avatar">TL</div>
+              <div><div class="testi-name">Tina L.</div><div class="testi-loc">📍 Seattle, WA — Restaurant Owner</div></div>
+            </div>
+          </div>
+        </div>
+        <div class="testi-card">
+          <div class="testi-inner">
+            <div class="testi-stars">★★★★★</div>
+            <div class="testi-text">Three other plumbers told me I needed to replace the whole sewer line — $12,000 quote. Sewer Detectives scoped it and found a root intrusion they cleared with hydro jetting for a fraction of the cost. Honest to a fault.</div>
+            <div class="testi-author">
+              <div class="testi-avatar">JW</div>
+              <div><div class="testi-name">James W.</div><div class="testi-loc">📍 Renton, WA</div></div>
+            </div>
+          </div>
+        </div>
+        <div class="testi-card">
+          <div class="testi-inner">
+            <div class="testi-stars">★★★★★</div>
+            <div class="testi-text">As a property manager I've used at least a dozen drain companies over the years. Sewer Detectives is a different level — organized, professional, always on time, always explains the findings clearly. My first call every time now.</div>
+            <div class="testi-author">
+              <div class="testi-avatar">SK</div>
+              <div><div class="testi-name">Sandra K.</div><div class="testi-loc">📍 Kirkland, WA — Property Manager</div></div>
+            </div>
+          </div>
+        </div>
+        <div class="testi-card">
+          <div class="testi-inner">
+            <div class="testi-stars">★★★★★</div>
+            <div class="testi-text">Senior discount, same-day service, didn't try to upsell me on anything I didn't need. Fixed the slow drain in my basement, showed me the camera footage, and explained how to prevent it happening again. Five stars, easy.</div>
+            <div class="testi-author">
+              <div class="testi-avatar">BH</div>
+              <div><div class="testi-name">Betty H.</div><div class="testi-loc">📍 Auburn, WA</div></div>
+            </div>
+          </div>
+        </div>
+        <div class="testi-card">
+          <div class="testi-inner">
+            <div class="testi-stars">★★★★★</div>
+            <div class="testi-text">Used their equipment rental service for a big commercial job. Well-maintained gear, fair pricing, and the team actually helped us troubleshoot an issue before we even left the lot. Quality people through and through.</div>
+            <div class="testi-author">
+              <div class="testi-avatar">DC</div>
+              <div><div class="testi-name">Dave C.</div><div class="testi-loc">📍 Tacoma, WA — Licensed Plumber</div></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="testi-controls">
+      <button class="testi-btn" id="testiPrev">←</button>
+      <div class="testi-dots" id="testiDots"></div>
+      <button class="testi-btn" id="testiNext">→</button>
+    </div>
+  </div>
+</section>
+
+<!-- EMERGENCY -->
+<section id="emergency">
+  <div class="emg-inner">
+    <div class="emg-badge">🚨 Emergency Response Available</div>
+    <h2 class="emg-title reveal">Sewage Backup? Don't Wait.<br/>Call Us Right Now.</h2>
+    <p class="emg-sub reveal">Sewer emergencies cause damage by the minute. Our emergency team serves Greater Seattle 24 hours a day, 7 days a week — including nights, weekends, and holidays.</p>
+    <div class="emg-actions reveal">
+      <a href="tel:4259234958" class="btn-red">📞 (425) 923-4958 — Call Now</a>
+      <a href="#contact" class="btn-secondary">Request Emergency Visit →</a>
+    </div>
+  </div>
+</section>
+
+<!-- SERVICE AREA -->
+<section id="area">
+  <div class="section-inner">
+    <div class="area-grid">
+      <div class="reveal-left">
+        <div class="section-tag">Service Area</div>
+        <h2 class="section-title">Proudly Serving Greater Seattle & King County</h2>
+        <p class="section-sub">Locally owned and operated — we're your neighbors. Whether you're in the city or the suburbs, our team is nearby and ready.</p>
+        <div class="area-cities">
+          <div class="city-chip">Seattle</div>
+          <div class="city-chip">Bellevue</div>
+          <div class="city-chip">Kirkland</div>
+          <div class="city-chip">Redmond</div>
+          <div class="city-chip">Renton</div>
+          <div class="city-chip">Auburn</div>
+          <div class="city-chip">Kent</div>
+          <div class="city-chip">Federal Way</div>
+          <div class="city-chip">Burien</div>
+          <div class="city-chip">Mercer Island</div>
+          <div class="city-chip">Issaquah</div>
+          <div class="city-chip">Sammamish</div>
+        </div>
+        <p style="margin-top:24px;font-size:14px;color:var(--muted)">Not sure if we serve your area? <a href="tel:4259234958" style="color:var(--gold);font-weight:600">Give us a call</a> — we'll let you know immediately.</p>
+      </div>
+      <div class="area-visual reveal-right">
+        <div class="map-placeholder">
+          <div class="map-rings">
+            <div class="map-ring"></div>
+            <div class="map-ring"></div>
+            <div class="map-ring"></div>
+            <div class="map-center">📍</div>
+          </div>
+          <div class="map-label">Greater Seattle</div>
+          <div class="map-sublabel">King County & Surrounding Areas</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section id="faq">
+  <div class="section-inner">
+    <div class="section-header center">
+      <div class="section-tag reveal">FAQ</div>
+      <h2 class="section-title reveal reveal-delay-1">Questions We Hear Every Day.<br/>Answered Honestly.</h2>
+    </div>
+    <div class="faq-list reveal">
+      <div class="faq-item">
+        <button class="faq-q">How much does a sewer inspection cost? <span class="faq-icon">+</span></button>
+        <div class="faq-a"><div class="faq-a-inner">Sewer camera inspections are typically among our most affordable services — and almost always the smartest first step before any repair work. Cost varies based on line length and accessibility. Call us for a specific quote — we're always upfront about pricing before we show up.</div></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q">How do I know if I need hydro jetting or just a regular drain snake? <span class="faq-icon">+</span></button>
+        <div class="faq-a"><div class="faq-a-inner">A drain snake breaks through immediate blockages but doesn't clean the pipe walls. If you're dealing with recurring clogs, slow drains that come back, or heavy grease buildup (especially in commercial settings), hydro jetting is the right call. We use camera inspection first to confirm which solution is appropriate.</div></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q">Do you offer senior and veteran discounts? <span class="faq-icon">+</span></button>
+        <div class="faq-a"><div class="faq-a-inner">Yes — we're proud to offer discounts for seniors and veterans. Just mention it when you call or submit a quote request. It's our way of giving back to the communities and people who built this region.</div></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q">What's the difference between a sewer line and a drain line? <span class="faq-icon">+</span></button>
+        <div class="faq-a"><div class="faq-a-inner">Drain lines carry wastewater from individual fixtures (sinks, toilets, showers) inside your home or building. The sewer line is the main pipe that carries all that waste from your property to the municipal sewer system. Problems deeper in the line — like root intrusion or pipe collapse — are sewer line issues. Both are squarely in our wheelhouse.</div></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q">Are you available for after-hours or weekend emergency calls? <span class="faq-icon">+</span></button>
+        <div class="faq-a"><div class="faq-a-inner">Absolutely. Sewer emergencies happen around the clock — and we're available 24/7, including nights, weekends, and holidays. Sewage backups can cause serious structural damage quickly. If you're facing an emergency, call us immediately at (425) 923-4958.</div></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q">Can I rent equipment if I'm a licensed plumber? <span class="faq-icon">+</span></button>
+        <div class="faq-a"><div class="faq-a-inner">Yes — we offer equipment rental specifically for licensed plumbing contractors. This includes our specialized sewer inspection and jetting equipment. Contact us directly to discuss availability and rental terms. Proof of licensing required.</div></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q">How quickly can you typically get to my property? <span class="faq-icon">+</span></button>
+        <div class="faq-a"><div class="faq-a-inner">For scheduled appointments, we can often get you in same-day or next-day, depending on our schedule. Emergency calls are prioritized — we aim to respond as fast as possible because we know every minute counts when it comes to sewer issues. Response times vary by location and time of day.</div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact">
+  <div class="section-inner">
+    <div class="contact-grid">
+      <div class="reveal-left">
+        <div class="section-tag">Get In Touch</div>
+        <h2 class="section-title">Ready to Schedule?<br/>Let's Talk.</h2>
+        <p class="contact-info" style="color:var(--muted);line-height:1.7;margin:16px 0 36px">Whether it's routine maintenance, a problem you've been ignoring, or a full-blown emergency — reach out and we'll figure out the right next step together.</p>
+        <div class="contact-detail">
+          <div class="contact-icon">📞</div>
+          <div class="contact-detail-text">
+            <strong>Phone</strong>
+            <span><a href="tel:4259234958" style="color:var(--gold);font-weight:600">(425) 923-4958</a></span>
+          </div>
+        </div>
+        <div class="contact-detail">
+          <div class="contact-icon">🕐</div>
+          <div class="contact-detail-text">
+            <strong>Hours</strong>
+            <span>24/7 Emergency · Office: Mon–Sat 7am–6pm</span>
+          </div>
+        </div>
+        <div class="contact-detail">
+          <div class="contact-icon">📍</div>
+          <div class="contact-detail-text">
+            <strong>Service Area</strong>
+            <span>Greater Seattle & King County, WA</span>
+          </div>
+        </div>
+        <div class="contact-detail">
+          <div class="contact-icon">🏅</div>
+          <div class="contact-detail-text">
+            <strong>Credentials</strong>
+            <span>Licensed · Bonded · Insured · City of Seattle Registered · WOSSA Member</span>
+          </div>
+        </div>
+      </div>
+      <div class="reveal-right">
+        <div class="form-card">
+          <h3 style="font-size:22px;font-weight:800;margin-bottom:8px">Request a Free Quote</h3>
+          <p style="font-size:14px;color:var(--muted);margin-bottom:28px">Fill this out and we'll get back to you fast — usually within the hour during business hours.</p>
+          <form id="contactForm" onsubmit="submitForm(event)">
+            <div class="form-row">
+              <div class="form-group">
+                <label>First Name *</label>
+                <input type="text" placeholder="John" required/>
+              </div>
+              <div class="form-group">
+                <label>Last Name *</label>
+                <input type="text" placeholder="Smith" required/>
+              </div>
+            </div>
+            <div class="form-row">
+              <div class="form-group">
+                <label>Phone *</label>
+                <input type="tel" placeholder="(206) 555-0100" required/>
+              </div>
+              <div class="form-group">
+                <label>Email</label>
+                <input type="email" placeholder="john@email.com"/>
+              </div>
+            </div>
+            <div class="form-group">
+              <label>Service Needed</label>
+              <select>
+                <option value="">Select a service...</option>
+                <option>Sewer Line Inspection</option>
+                <option>Hydro Jetting</option>
+                <option>Residential Drain Cleaning</option>
+                <option>Commercial Drain Cleaning</option>
+                <option>Equipment Rental</option>
+                <option>Emergency Service</option>
+                <option>Other / Not Sure</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label>Tell Us About the Problem</label>
+              <textarea placeholder="Describe what's going on — any details help us come prepared..."></textarea>
+            </div>
+            <button type="submit" class="form-submit">Send My Request →</button>
+            <div class="form-note">🔒 Your information is never shared. We'll contact you shortly.</div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-inner">
+    <div class="footer-top">
+      <div class="footer-brand">
+        <div class="logo">Sewer <span>Detectives</span> LLC</div>
+        <p>Seattle's trusted sewer and drain specialists. Locally owned, professionally certified, and committed to solving your problem right the first time.</p>
+        <div class="footer-badges">
+          <div class="footer-badge">Licensed, Bonded & Insured</div>
+          <div class="footer-badge">City of Seattle Registered Contractor</div>
+          <div class="footer-badge">WOSSA Member</div>
+          <div class="footer-badge">Senior & Veteran Discounts Available</div>
+        </div>
+      </div>
+      <div class="footer-col">
+        <h5>Services</h5>
+        <ul>
+          <li><a href="#services">Sewer Line Inspection</a></li>
+          <li><a href="#services">Hydro Jetting</a></li>
+          <li><a href="#services">Residential Drain Cleaning</a></li>
+          <li><a href="#services">Commercial Drain Cleaning</a></li>
+          <li><a href="#services">Equipment Rental</a></li>
+          <li><a href="#emergency">Emergency Service</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h5>Company</h5>
+        <ul>
+          <li><a href="#why">About Us</a></li>
+          <li><a href="#process">Our Process</a></li>
+          <li><a href="#testimonials">Reviews</a></li>
+          <li><a href="#area">Service Area</a></li>
+          <li><a href="#faq">FAQ</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h5>Contact Us</h5>
+        <ul>
+          <li><a href="tel:4259234958">📞 (425) 923-4958</a></li>
+          <li><a href="#contact">📋 Request a Quote</a></li>
+          <li><a href="#emergency">🚨 Emergency Line</a></li>
+        </ul>
+        <div style="margin-top:20px;font-size:13px;color:var(--muted2)">
+          <div style="margin-bottom:6px">📍 Greater Seattle & King County, WA</div>
+          <div>🕐 24/7 Emergency Available</div>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2025 Sewer Detectives LLC. All rights reserved. | Greater Seattle, WA</p>
+      <div class="footer-phone">📞 <a href="tel:4259234958" style="color:var(--gold)">(425) 923-4958</a></div>
+    </div>
+  </div>
+</footer>
+
+<!-- CHATBOT FAB -->
+<button class="chat-fab" id="chatFab" onclick="toggleChat()" aria-label="Open chat">
+  <div class="chat-fab-pulse"></div>
+  <span id="chatFabIcon">💬</span>
+  <div class="chat-unread" id="chatUnread">1</div>
+</button>
+
+<!-- CHATBOT WINDOW -->
+<div class="chat-window" id="chatWindow">
+  <div class="chat-header">
+    <div class="chat-agent">
+      <div class="chat-avatar">SD<div class="chat-online"></div></div>
+      <div class="chat-agent-info">
+        <div class="name">Sam — Sewer Detectives</div>
+        <div class="role">● Online Now · Typically replies instantly</div>
+      </div>
+    </div>
+    <button class="chat-close" onclick="toggleChat()">✕</button>
+  </div>
+  <div class="chat-messages" id="chatMessages"></div>
+  <div class="quick-replies" id="quickReplies"></div>
+  <div class="chat-input-row">
+    <textarea class="chat-input" id="chatInput" placeholder="Ask about services, pricing, or schedule..." rows="1" onkeydown="handleChatKey(event)" oninput="autoResize(this)"></textarea>
+    <button class="chat-send" onclick="sendChatMessage()" aria-label="Send">➤</button>
+  </div>
+</div>
+
+<script>
+/* ═══════════════════════════════════════════
+   SCRIPTED CHATBOT — NO API KEY NEEDED
+═══════════════════════════════════════════ */
+
+const RESPONSES = [
+  {
+    keys: /emergency|backup|flood|overflow|sewage backing|sewage back|overflowing|urgent/i,
+    reply: "That sounds like an emergency — don't wait on this one. Sewage backups cause serious damage fast. <strong>Call us right now at <a href='tel:4259234958' style='color:var(--gold);font-weight:700'>(425) 923-4958</a></strong> and we'll get someone out to you ASAP. We're available 24/7 including nights and weekends.",
+    qr: ["📞 Call Now — (425) 923-4958", "How fast can you respond?", "What areas do you cover?"]
+  },
+  {
+    keys: /how fast|response time|how soon|how quick|eta|when can you|same day|today/i,
+    reply: "For emergencies we move as fast as possible — our team is dispatched around the clock. For scheduled work, we're usually available same-day or next-day depending on our schedule. Give us a call at <a href='tel:4259234958' style='color:var(--gold);font-weight:700'>(425) 923-4958</a> and we'll give you an honest ETA right away.",
+    qr: ["📞 Call for an ETA", "What's your service area?", "Do you work weekends?"]
+  },
+  {
+    keys: /cost|price|how much|charge|fee|quote|estimate|expensive|affordable/i,
+    reply: "Pricing varies depending on the job — line length, access, and what we find during inspection all factor in. We always give you a clear, upfront quote before we do anything, so there are zero surprises. Call us at <a href='tel:4259234958' style='color:var(--gold);font-weight:700'>(425) 923-4958</a> for a free estimate — we'll tell you exactly what to expect.",
+    qr: ["Get a free quote", "What's included in an inspection?", "Do you offer discounts?"]
+  },
+  {
+    keys: /inspect|inspection|camera|scope|video|diagnos/i,
+    reply: "Our HD camera inspections give you a real-time, crystal-clear view of what's happening inside your sewer line — no guesswork, just facts. We'll show you the footage on the spot so you know exactly what's going on before we recommend anything. It's usually our first step and one of our most affordable services. Want to schedule one?",
+    qr: ["Schedule an inspection", "How much does it cost?", "What happens after?"]
+  },
+  {
+    keys: /hydro|jetting|jet|pressure|blast|roots|grease buildup|scale/i,
+    reply: "Hydro jetting uses industrial-grade water pressure to completely clear your pipe walls — grease, mineral scale, tree roots, compacted debris, all of it. Unlike a drain snake that just pokes through a clog, hydro jetting restores your line to like-new flow capacity. It's the lasting fix, not a band-aid. Want more details or a quote?",
+    qr: ["Get a hydro jetting quote", "How is it different from snaking?", "What does it cost?"]
+  },
+  {
+    keys: /snake|auger|rod|roto/i,
+    reply: "A drain snake breaks through an immediate blockage but doesn't clean the pipe walls, so clogs tend to come back. If you're dealing with recurring issues or heavy buildup, hydro jetting is the better long-term fix. We always camera-inspect first so we recommend the right solution — not the most expensive one.",
+    qr: ["Tell me about hydro jetting", "Schedule an inspection", "Get a free quote"]
+  },
+  {
+    keys: /residential|home|house|apartment|condo|basement|bathroom|kitchen|toilet|sink|shower/i,
+    reply: "We handle all types of residential drain and sewer issues — slow drains, recurring clogs, gurgling sounds, foul odors, you name it. We come in, diagnose with the camera, give you an honest quote, and clear it up cleanly without trashing your place. Want to get something scheduled?",
+    qr: ["Schedule a visit", "How much does it cost?", "What areas do you serve?"]
+  },
+  {
+    keys: /commercial|restaurant|business|retail|office|property manager|apartment complex|multi.?unit|building/i,
+    reply: "We work with restaurants, property managers, apartment complexes, retail — any commercial property with high-volume drainage needs. We understand that downtime costs money, so we move fast and get it resolved right the first time. Emergency commercial calls are always prioritized. Want to talk about your property?",
+    qr: ["Get a commercial quote", "📞 Call (425) 923-4958", "What areas do you serve?"]
+  },
+  {
+    keys: /rental|rent equipment|borrow|contractor|licensed plumber|plumber looking/i,
+    reply: "Yes — we rent our professional-grade sewer inspection and hydro jetting equipment to licensed plumbing contractors. It's a great option if you need the capability without the capital cost. Give us a call at <a href='tel:4259234958' style='color:var(--gold);font-weight:700'>(425) 923-4958</a> to check availability and pricing. Proof of licensing is required.",
+    qr: ["📞 Call about rentals", "What equipment is available?", "What are your hours?"]
+  },
+  {
+    keys: /discount|senior|veteran|military|elder|retired/i,
+    reply: "Yes — we proudly offer discounts for seniors and veterans. Just mention it when you call or book and we'll apply it automatically. No hoops to jump through. It's our way of giving back to the people who built this community. 🙏",
+    qr: ["📞 Call & mention discount", "Schedule a visit", "Get a free quote"]
+  },
+  {
+    keys: /area|cover|serv(e|ice area)|location|where|seattle|bellevue|kirkland|renton|redmond|kent|auburn|king county|burien|issaquah|sammamish|federal way/i,
+    reply: "We serve Greater Seattle and King County — including Seattle, Bellevue, Kirkland, Redmond, Renton, Auburn, Kent, Federal Way, Burien, Mercer Island, Issaquah, and Sammamish. Not sure if you're in range? Call us at <a href='tel:4259234958' style='color:var(--gold);font-weight:700'>(425) 923-4958</a> and we'll confirm right away.",
+    qr: ["📞 Confirm my area", "Schedule a visit", "Get a free quote"]
+  },
+  {
+    keys: /hours|open|available|weekend|sunday|saturday|night|after hours|24.?7/i,
+    reply: "We're available 24/7 for emergencies — nights, weekends, and holidays included. Our office hours are Monday through Saturday, 7am to 6pm. If you've got an emergency outside those hours, just call and we'll dispatch right away.",
+    qr: ["📞 Call (425) 923-4958", "This is an emergency", "Schedule a visit"]
+  },
+  {
+    keys: /licens|bond|insur|certif|credential|qualified|legit|registered|wossa/i,
+    reply: "We're fully licensed, bonded, and insured in Washington State — and a registered contractor with the City of Seattle. We're also a member of the Washington On Site Sewage Association (WOSSA), which holds us to the highest professional standards in the industry. You're in good hands.",
+    qr: ["Get a free quote", "📞 Call (425) 923-4958", "What services do you offer?"]
+  },
+  {
+    keys: /schedule|book|appointment|set up|visit|come out|send someone/i,
+    reply: "Absolutely — we'd love to get you scheduled. The fastest way is to call us at <a href='tel:4259234958' style='color:var(--gold);font-weight:700'>(425) 923-4958</a> and we'll get you locked in, often same-day. You can also scroll down and fill out our quick contact form and we'll reach out within the hour.",
+    qr: ["📞 Call to schedule", "Fill out the form", "What's the process?"]
+  },
+  {
+    keys: /process|how does it work|what happens|steps|procedure/i,
+    reply: "Simple — you call or submit a request, we confirm your appointment (often same-day), our tech shows up on time and scopes your lines with the HD camera, we give you a clear upfront quote, you approve it, and we fix it. No surprises, no pressure. Want to get started?",
+    qr: ["📞 Call (425) 923-4958", "Get a free quote", "What does it cost?"]
+  },
+  {
+    keys: /smell|odor|stink|sewage smell|rotten egg|foul|bad smell/i,
+    reply: "Foul sewer smells are usually a sign of a blockage, a dry P-trap, or a cracked pipe letting gas escape. It's worth getting looked at — sewer gas isn't just unpleasant, it can be a health issue. A camera inspection would tell us exactly what's going on. Want to schedule one?",
+    qr: ["Schedule an inspection", "How much does it cost?", "📞 Call (425) 923-4958"]
+  },
+  {
+    keys: /slow drain|draining slow|won't drain|not draining|standing water/i,
+    reply: "Slow drains are usually early warning signs of a partial blockage or buildup in the line. Catching it now is way cheaper than dealing with a full backup later. We can come out, scope it, and clear it in one visit. Want to get something set up?",
+    qr: ["Schedule a visit", "How much does it cost?", "📞 Call (425) 923-4958"]
+  },
+  {
+    keys: /tree root|root intrusion|roots in pipe/i,
+    reply: "Root intrusion is one of the most common sewer problems we see in the Seattle area — roots are drawn to the moisture and nutrients in your pipes. We can clear them with hydro jetting and show you the camera footage before and after. If the pipe is damaged, we'll let you know honestly. Want us to take a look?",
+    qr: ["Schedule an inspection", "Tell me about hydro jetting", "Get a free quote"]
+  },
+  {
+    keys: /thank|thanks|appreciate|helpful|great|awesome|perfect|sounds good/i,
+    reply: "Happy to help! 😊 If you're ready to schedule or have any other questions, don't hesitate to reach out. You can call us anytime at <a href='tel:4259234958' style='color:var(--gold);font-weight:700'>(425) 923-4958</a> — we'd love to earn your business.",
+    qr: ["📞 Call (425) 923-4958", "Get a free quote", "What areas do you serve?"]
+  },
+  {
+    keys: /hi|hello|hey|good morning|good afternoon|what's up|howdy/i,
+    reply: "Hey there! Great to hear from you 👋 I'm Sam with Sewer Detectives — what's going on with your drain or sewer today? I'm here to help you figure out the next step.",
+    qr: ["I have a clogged drain", "Need a sewer inspection", "This is an emergency", "What does it cost?"]
+  }
+];
+
+const FALLBACK = [
+  "Good question! The best way for me to give you an accurate answer is to have one of our team members connect with you directly. Give us a call at <a href='tel:4259234958' style='color:var(--gold);font-weight:700'>(425) 923-4958</a> and we'll sort you out right away.",
+  "That's something our team can answer specifically for your situation. Call us at <a href='tel:4259234958' style='color:var(--gold);font-weight:700'>(425) 923-4958</a> — we're available now and happy to walk you through it.",
+  "I want to make sure you get the right answer on that one. Our team at <a href='tel:4259234958' style='color:var(--gold);font-weight:700'>(425) 923-4958</a> can give you specifics based on your exact situation. It's a quick call and totally free."
+];
+let fallbackIdx = 0;
+
+function getResponse(text) {
+  for (const r of RESPONSES) {
+    if (r.keys.test(text)) return r;
+  }
+  const fb = { reply: FALLBACK[fallbackIdx % FALLBACK.length], qr: ["📞 Call (425) 923-4958", "Get a free quote", "What services do you offer?"] };
+  fallbackIdx++;
+  return fb;
+}
+
+const chatMessages = [];
+let chatOpen = false;
+let firstOpen = true;
+
+function toggleChat() {
+  chatOpen = !chatOpen;
+  const win = document.getElementById('chatWindow');
+  const icon = document.getElementById('chatFabIcon');
+  const unread = document.getElementById('chatUnread');
+  win.classList.toggle('open', chatOpen);
+  icon.textContent = chatOpen ? '✕' : '💬';
+  unread.style.display = 'none';
+  if (chatOpen && firstOpen) {
+    firstOpen = false;
+    setTimeout(() => addBotMessage("Hey! I'm Sam with Sewer Detectives 👋 Got a drain or sewer problem? I can help you figure out next steps, answer questions, or get you scheduled fast. What's going on?", [
+      "I have a clogged drain",
+      "I need an inspection",
+      "This is an emergency",
+      "What does it cost?"
+    ]), 400);
+  }
+}
+
+function addBotMessage(text, quickReplies = []) {
+  const msgs = document.getElementById('chatMessages');
+  const time = new Date().toLocaleTimeString([], {hour:'2-digit',minute:'2-digit'});
+  const el = document.createElement('div');
+  el.className = 'msg bot';
+  el.innerHTML = `<div class="msg-bubble">${text}</div><div class="msg-time">${time}</div>`;
+  msgs.appendChild(el);
+  msgs.scrollTop = msgs.scrollHeight;
+  const qr = document.getElementById('quickReplies');
+  qr.innerHTML = '';
+  if (quickReplies.length) {
+    quickReplies.forEach(r => {
+      const btn = document.createElement('button');
+      btn.className = 'qr-btn';
+      btn.textContent = r;
+      btn.onclick = () => { sendMessage(r); };
+      qr.appendChild(btn);
+    });
+  }
+}
+
+function addUserMessage(text) {
+  const msgs = document.getElementById('chatMessages');
+  const time = new Date().toLocaleTimeString([], {hour:'2-digit',minute:'2-digit'});
+  const el = document.createElement('div');
+  el.className = 'msg user';
+  el.innerHTML = `<div class="msg-bubble">${text}</div><div class="msg-time">${time}</div>`;
+  msgs.appendChild(el);
+  msgs.scrollTop = msgs.scrollHeight;
+  document.getElementById('quickReplies').innerHTML = '';
+}
+
+function addTyping() {
+  const msgs = document.getElementById('chatMessages');
+  const el = document.createElement('div');
+  el.className = 'msg bot';
+  el.id = 'typingIndicator';
+  el.innerHTML = '<div class="typing-bubble"><div class="typing-dot"></div><div class="typing-dot"></div><div class="typing-dot"></div></div>';
+  msgs.appendChild(el);
+  msgs.scrollTop = msgs.scrollHeight;
+}
+
+function removeTyping() {
+  const el = document.getElementById('typingIndicator');
+  if (el) el.remove();
+}
+
+function sendMessage(text) {
+  if (!text.trim()) return;
+  addUserMessage(text);
+  document.getElementById('chatInput').value = '';
+  addTyping();
+  const response = getResponse(text);
+  setTimeout(() => {
+    removeTyping();
+    addBotMessage(response.reply, response.qr);
+  }, 900 + Math.random() * 600);
+}
+
+function sendChatMessage() {
+  const input = document.getElementById('chatInput');
+  sendMessage(input.value.trim());
+}
+
+function handleChatKey(e) {
+  if (e.key === 'Enter' && !e.shiftKey) {
+    e.preventDefault();
+    sendChatMessage();
+  }
+}
+
+function autoResize(el) {
+  el.style.height = 'auto';
+  el.style.height = Math.min(el.scrollHeight, 100) + 'px';
+}
+
+/* ═══════════════════════════════════════════
+   LOADER
+═══════════════════════════════════════════ */
+window.addEventListener('load', () => {
+  setTimeout(() => {
+    document.getElementById('loader').classList.add('hidden');
+  }, 1800);
+});
+
+/* ═══════════════════════════════════════════
+   NAV SCROLL
+═══════════════════════════════════════════ */
+window.addEventListener('scroll', () => {
+  document.getElementById('navbar').classList.toggle('scrolled', window.scrollY > 40);
+});
+
+/* ═══════════════════════════════════════════
+   MOBILE MENU
+═══════════════════════════════════════════ */
+function openMobileMenu() { document.getElementById('mobileMenu').classList.add('open'); }
+function closeMobileMenu() { document.getElementById('mobileMenu').classList.remove('open'); }
+
+/* ═══════════════════════════════════════════
+   SCROLL REVEAL
+═══════════════════════════════════════════ */
+const revealObserver = new IntersectionObserver((entries) => {
+  entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('revealed'); revealObserver.unobserve(e.target); }});
+}, {threshold: 0.12, rootMargin: '0px 0px -40px 0px'});
+
+document.querySelectorAll('.reveal, .reveal-left, .reveal-right').forEach(el => revealObserver.observe(el));
+
+/* ═══════════════════════════════════════════
+   ANIMATED COUNTERS
+═══════════════════════════════════════════ */
+function animateCounter(el) {
+  const target = parseInt(el.dataset.target);
+  const suffix = el.dataset.suffix || '';
+  const duration = 2000;
+  const start = performance.now();
+  function update(now) {
+    const elapsed = now - start;
+    const progress = Math.min(elapsed / duration, 1);
+    const eased = 1 - Math.pow(1 - progress, 3);
+    el.textContent = Math.floor(eased * target) + suffix;
+    if (progress < 1) requestAnimationFrame(update);
+    else el.textContent = target + suffix;
+  }
+  requestAnimationFrame(update);
+}
+
+const counterObserver = new IntersectionObserver((entries) => {
+  entries.forEach(e => {
+    if (e.isIntersecting) {
+      e.target.querySelectorAll('[data-target]').forEach(animateCounter);
+      counterObserver.unobserve(e.target);
+    }
+  });
+}, {threshold: 0.3});
+
+const statsEl = document.getElementById('stats');
+if (statsEl) counterObserver.observe(statsEl);
+
+/* ═══════════════════════════════════════════
+   RIPPLE CANVAS
+═══════════════════════════════════════════ */
+(function() {
+  const canvas = document.getElementById('rippleCanvas');
+  if (!canvas) return;
+  const ctx = canvas.getContext('2d');
+  let w, h, ripples = [];
+
+  function resize() {
+    w = canvas.width = canvas.offsetWidth;
+    h = canvas.height = canvas.offsetHeight;
+  }
+  resize();
+  window.addEventListener('resize', resize);
+
+  function spawnRipple() {
+    ripples.push({
+      x: Math.random() * w,
+      y: Math.random() * h,
+      r: 0,
+      maxR: 80 + Math.random() * 120,
+      opacity: 0.3 + Math.random() * 0.2,
+      speed: 0.5 + Math.random() * 0.8,
+      color: Math.random() > 0.5 ? '0,196,212' : '240,180,41'
+    });
+  }
+
+  function frame() {
+    ctx.clearRect(0, 0, w, h);
+    ripples = ripples.filter(r => r.opacity > 0.01);
+    ripples.forEach(r => {
+      ctx.beginPath();
+      ctx.arc(r.x, r.y, r.r, 0, Math.PI * 2);
+      ctx.strokeStyle = `rgba(${r.color},${r.opacity})`;
+      ctx.lineWidth = 1.5;
+      ctx.stroke();
+      r.r += r.speed;
+      r.opacity -= 0.004;
+    });
+    if (ripples.length < 12 && Math.random() < 0.04) spawnRipple();
+    requestAnimationFrame(frame);
+  }
+  for (let i = 0; i < 5; i++) spawnRipple();
+  frame();
+})();
+
+/* ═══════════════════════════════════════════
+   BEFORE / AFTER SLIDER
+═══════════════════════════════════════════ */
+(function() {
+  const container = document.getElementById('baContainer');
+  const divider = document.getElementById('baDivider');
+  const after = document.getElementById('baAfter');
+  if (!container) return;
+  let dragging = false;
+
+  function setPos(pct) {
+    pct = Math.max(5, Math.min(95, pct));
+    divider.style.left = pct + '%';
+    after.style.clipPath = `inset(0 ${100 - pct}% 0 0)`;
+  }
+  setPos(50);
+
+  function getPos(e) {
+    const rect = container.getBoundingClientRect();
+    const x = (e.touches ? e.touches[0].clientX : e.clientX) - rect.left;
+    return (x / rect.width) * 100;
+  }
+
+  divider.addEventListener('mousedown', () => { dragging = true; });
+  divider.addEventListener('touchstart', () => { dragging = true; }, {passive:true});
+  window.addEventListener('mousemove', e => { if (dragging) setPos(getPos(e)); });
+  window.addEventListener('touchmove', e => { if (dragging) setPos(getPos(e)); }, {passive:true});
+  window.addEventListener('mouseup', () => { dragging = false; });
+  window.addEventListener('touchend', () => { dragging = false; });
+  container.addEventListener('click', e => setPos(getPos(e)));
+})();
+
+/* ═══════════════════════════════════════════
+   TESTIMONIAL SLIDER
+═══════════════════════════════════════════ */
+(function() {
+  const track = document.getElementById('testiTrack');
+  const dotsEl = document.getElementById('testiDots');
+  if (!track) return;
+  const cards = track.querySelectorAll('.testi-card');
+  let perView = window.innerWidth >= 1024 ? 3 : window.innerWidth >= 768 ? 2 : 1;
+  const total = cards.length;
+  let current = 0;
+  let dots = [];
+
+  function buildDots() {
+    dotsEl.innerHTML = '';
+    dots = [];
+    const pages = Math.ceil(total / perView);
+    for (let i = 0; i < pages; i++) {
+      const d = document.createElement('div');
+      d.className = 'testi-dot' + (i === 0 ? ' active' : '');
+      d.onclick = () => goTo(i * perView);
+      dotsEl.appendChild(d);
+      dots.push(d);
+    }
+  }
+
+  function goTo(idx) {
+    current = Math.max(0, Math.min(idx, total - perView));
+    const pct = (current / total) * 100;
+    track.style.transform = `translateX(-${pct}%)`;
+    dots.forEach((d, i) => d.classList.toggle('active', i === Math.floor(current / perView)));
+  }
+
+  buildDots();
+  document.getElementById('testiNext').onclick = () => goTo(current + perView);
+  document.getElementById('testiPrev').onclick = () => goTo(current - perView);
+
+  window.addEventListener('resize', () => {
+    perView = window.innerWidth >= 1024 ? 3 : window.innerWidth >= 768 ? 2 : 1;
+    buildDots();
+    goTo(0);
+  });
+
+  // Auto-advance
+  setInterval(() => goTo(current + perView >= total ? 0 : current + perView), 5000);
+})();
+
+/* ═══════════════════════════════════════════
+   FAQ ACCORDION
+═══════════════════════════════════════════ */
+document.querySelectorAll('.faq-q').forEach(btn => {
+  btn.addEventListener('click', () => {
+    const item = btn.closest('.faq-item');
+    const isOpen = item.classList.contains('open');
+    document.querySelectorAll('.faq-item').forEach(i => i.classList.remove('open'));
+    if (!isOpen) item.classList.add('open');
+  });
+});
+
+/* ═══════════════════════════════════════════
+   CONTACT FORM
+═══════════════════════════════════════════ */
+function submitForm(e) {
+  e.preventDefault();
+  const btn = e.target.querySelector('.form-submit');
+  btn.textContent = '✓ Request Sent! We\'ll be in touch soon.';
+  btn.style.background = '#22c55e';
+  btn.disabled = true;
+}
+
+/* ═══════════════════════════════════════════
+   BUTTON RIPPLE EFFECT
+═══════════════════════════════════════════ */
+document.querySelectorAll('.btn-primary, .btn-call, .btn-red').forEach(btn => {
+  btn.addEventListener('click', function(e) {
+    const rect = this.getBoundingClientRect();
+    const x = e.clientX - rect.left, y = e.clientY - rect.top;
+    const ripple = document.createElement('span');
+    ripple.style.cssText = `position:absolute;border-radius:50%;background:rgba(255,255,255,0.3);transform:scale(0);animation:rippleEffect 0.6s linear;left:${x}px;top:${y}px;width:20px;height:20px;margin:-10px;pointer-events:none`;
+    this.style.position = 'relative';
+    this.style.overflow = 'hidden';
+    this.appendChild(ripple);
+    setTimeout(() => ripple.remove(), 600);
+  });
+});
+
+const rippleStyle = document.createElement('style');
+rippleStyle.textContent = '@keyframes rippleEffect{to{transform:scale(20);opacity:0}}';
+document.head.appendChild(rippleStyle);
+</script>
+</body>
+</html>
